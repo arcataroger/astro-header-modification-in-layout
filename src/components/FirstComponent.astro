@@ -1,0 +1,8 @@
+---
+Astro.response.headers.append('header-sources', '/components/FirstComponent.astro')
+Astro.response.headers.set('header-source-first-component', 'true')
+---
+
+<div id="container">
+	<h1 style="color: red">This is a component earlier in the loading order</h1>
+</div>

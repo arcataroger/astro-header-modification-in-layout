@@ -1,11 +1,14 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import FirstComponent from "../components/FirstComponent.astro";
 
-Astro.response.headers.append('header-sources', '/pages/index.astro')
-Astro.response.headers.set('header-source-index', 'true')
+Astro.response.headers.append("header-sources", "/pages/index.astro");
+Astro.response.headers.set("header-source-index", "true");
 ---
 
+<FirstComponent />
+
 <Layout>
-	<Welcome />
+  <Welcome />
 </Layout>
