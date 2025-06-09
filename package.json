@@ -11,5 +11,8 @@
   "dependencies": {
     "astro": "^5.9.0",
     "@astrojs/node": "^9.2.2"
+  },
+  "stackblitz": {
+    "startCommand": "npm build && npm preview"
   }
 }
