@@ -3,6 +3,7 @@ import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
 Astro.response.headers.append('header-sources', '/pages/index.astro')
+Astro.response.headers.set('header-source-index', 'true')
 ---
 
 <Layout>
